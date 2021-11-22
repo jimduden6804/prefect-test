@@ -1,0 +1,39 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "eu-central-1",
+            "eventTime": "1988-11-22T11:42:41.493Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "somePrincipalId"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "someIp"
+            },
+            "responseElements": {
+                "x-amz-request-id": "some",
+                "x-amz-id-2": "some"
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "doppel-dirk",
+                "bucket": {
+                    "name": "someBucket",
+                    "ownerIdentity": {
+                        "principalId": "somePrincipalId"
+                    },
+                    "arn": "someBucketArn"
+                },
+                "object": {
+                    "key": "somePath",
+                    "size": 1337,
+                    "eTag": "someETag",
+                    "versionId": "someVersionId",
+                    "sequencer": "someSequencer"
+                }
+            }
+        }
+    ]
+}
